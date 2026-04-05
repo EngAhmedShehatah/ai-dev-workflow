@@ -59,7 +59,6 @@ Present a clean summary including:
 - **Sprint**
 - **Story Points**
 - **Scrum Team**
-- **Affects Version(s)**
 - **Fix Version(s)**
 - **Labels**
 - **Created / Updated dates**
@@ -72,7 +71,9 @@ Full description text.
 Show any non-empty custom fields that are not already covered above. Skip internal/system fields that have no user value.
 
 ### Figma Links
-Scan the description and all comments for URLs containing `figma.com`. List any found. If none, state: "No Figma links found."
+- Scan the ticket fields for URLs containing `figma.com`. List any found.
+- If found, use Figma MCP to fetch all details and summarize these details for user.
+- If none, state: "No Figma links found."
 
 ### Attachments
 List any attachments on the ticket (filename, size, author). These may contain screenshots, reports, or supporting documents relevant to the work.

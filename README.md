@@ -137,7 +137,7 @@ Final review → merge
 ## Related Articles
 
 - [Basic Setup — AI Dev Workflow](https://medium.com/@engahmedshehatah/basic-setup-ai-dev-workflow-33724218fc2a)
-- [Custom Commands — Claude Code](link here once published)
+- [Custom Commands — Claude Code](https://engahmedshehatah.medium.com/custom-commands-claude-code-bdcedbfd43eb)
 
 ---
 

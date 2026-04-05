@@ -23,28 +23,32 @@ The result is a workflow where you stay in control at every checkpoint, nothing 
 
 ```
 ai-dev-workflow/
-├── README.md
-├── setup-instructions.md          ← Start here
-├── agents/
-│   ├── implementer.md             ← Implements tasks from tasks.md
-│   ├── unit-tester.md             ← Writes unit tests after each task
-│   ├── e2e-tester.md              ← Writes e2e tests after all tasks
-│   ├── api-documenter.md          ← Documents REST API endpoints
-│   └── planner.md                 ← Ad-hoc planning outside spec-kit
-├── skills/
-│   └── planning.md                ← Generic planning skill (reuse everywhere)
-└── skill-creator-prompts/
-    ├── implementation.md          ← Paste into skill-creator for impl skill
-    ├── unit-testing.md            ← Paste into skill-creator for test skill
-    ├── e2e-testing.md             ← Paste into skill-creator for e2e skill
-    └── api-documentation.md       ← Paste into skill-creator for docs skill
+├── README.md                          ← This file
+├── 01-basic-setup/
+│   ├── setup-instructions.md          ← Start here
+│   ├── agents/
+│   │   ├── implementer.md             ← Implements tasks from tasks.md
+│   │   ├── unit-tester.md             ← Writes unit tests after each task
+│   │   ├── e2e-tester.md              ← Writes e2e tests after all tasks
+│   │   ├── api-documenter.md          ← Documents REST API endpoints
+│   │   └── planner.md                 ← Ad-hoc planning outside spec-kit
+│   ├── skills/
+│   │   └── planning.md                ← Generic planning skill (reuse everywhere)
+│   └── skill-creator-prompts/
+│       ├── implementation.md          ← Paste into skill-creator for impl skill
+│       ├── unit-testing.md            ← Paste into skill-creator for test skill
+│       ├── e2e-testing.md             ← Paste into skill-creator for e2e skill
+│       └── api-documentation.md      ← Paste into skill-creator for docs skill
+└── 02-custom-commands/
+    ├── jira.md                        ← /jira command: fetch Jira ticket with all context
+    └── git.md                         ← /ship command: branch, commit, push & PR
 ```
 
 ---
 
 ## Quick Start
 
-Read [`setup-instructions.md`](./setup-instructions.md) for the complete step-by-step setup guide.
+Read [`setup-instructions.md`](./01-basic-setup/setup-instructions.md) for the complete step-by-step setup guide.
 
 The short version:
 
@@ -52,13 +56,14 @@ The short version:
 1.  specify init --here --ai claude     → install spec-kit
 2.  /init                               → create CLAUDE.md
 3.  /speckit.constitution               → create constitution.md
-4.  Copy agents/ files → .claude/agents/
+4.  Copy 01-basic-setup/agents/ → .claude/agents/
 5.  Install skill-creator plugin
 6.  Run skill-creator × 4              → generate project-specific skills
-7.  Copy skills/planning.md → .claude/skills/
+7.  Copy 01-basic-setup/skills/planning.md → .claude/skills/
 8.  Modify .specify/templates to remove branch auto-creation
 9.  Modify implement.md to delegate to agents
 10. Install plugins and MCPs
+11. Copy 02-custom-commands/*.md → ~/.claude/commands/   (optional)
 ```
 
 ---
@@ -129,10 +134,10 @@ Final review → merge
 
 ---
 
-## Related Article
+## Related Articles
 
-This workflow is explained in detail in the Medium article:
-[Medium - Basic Setup — AI Dev Workflow](https://medium.com/@engahmedshehatah/basic-setup-ai-dev-workflow-33724218fc2a)
+- [Basic Setup — AI Dev Workflow](https://medium.com/@engahmedshehatah/basic-setup-ai-dev-workflow-33724218fc2a)
+- [Custom Commands — Claude Code](link here once published)
 
 ---
 
